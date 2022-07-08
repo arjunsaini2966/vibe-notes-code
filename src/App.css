@@ -67,12 +67,12 @@ button:focus {
 }
 
 .sidebar-header > h3 {
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   background-color: #a0b722;
   border: none;
   color: white;
   border-radius: 3px;
-  padding: 1rem;
+  padding: 5px;
 }
 
 .new-note {
@@ -84,16 +84,9 @@ button:focus {
   /* height: 40px; */
   width: 50px;
   font-size: 1rem;
-  padding: 1rem;
+  padding: 10px 5px;
 }
-.delete-btn {
-  padding: 18px;
-  margin-right: 8px;
-  background-color: rgb(23, 77, 47);
-  border-radius: 80%;
-  border: none;
-  cursor: pointer;
-}
+
 .delete-btn:active {
   background-color: red;
 }
@@ -161,7 +154,7 @@ button:focus {
 
 .selected-note {
   background-color: #1221a8;
-  background: linear-gradient(90deg, #11742a 1.18%, #0e0d08 100%);
+  background: linear-gradient(90deg, #11742a 1.18%, #494221 100%);
 }
 
 .selected-note .text-snippet {
@@ -197,4 +190,24 @@ button:focus {
   justify-content: center;
   align-items: center;
   background-color: whitesmoke;
+}
+
+@media (max-width: 600px) {
+  body {
+    min-width: 350px;
+  }
+  .sidebar-header {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .sidebar-header > h3 {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  .new-note {
+    padding: 5px;
+    margin-bottom: 5px;
+  }
 }
